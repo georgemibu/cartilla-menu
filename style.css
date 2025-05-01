@@ -8,7 +8,6 @@
 /*Fondo no necesario para pasar a react*/
 body{
     width: 100%;
-    height: 100vh;
     font-family: "DM Sans", sans-serif;
     color:#ffffff;
     display:flex;
@@ -23,7 +22,6 @@ body{
     flex-direction:column;
     align-items:center;
     background-color: #212121;
-    border:1px solid #ffffff;
     border-radius: 25px;
     margin-bottom:120px;   
 }
@@ -39,20 +37,31 @@ body{
 }
 /*Foto central de la receta*/
 .foto-receta{
-    width: 100%;
+    width: 70%;
     height: 200px;
-    border:1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.foto-receta img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
 /*Descripción de la receta*/
 .descripcion-receta{
     width: 100%;
-    height: 45px;
+    height: auto;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    padding:5px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:10px;  
+    margin-top:10px;
 }
 /*Titulo, precio y detalle de la receta*/
 .titulo-receta{
@@ -76,38 +85,67 @@ body{
     height:70px;
 }
 
-
 .valoracion-receta{
     width: 100%;
     height: 40px;
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
     justify-content: space-evenly;
+    padding-left:4px;
+    padding-right:4px;
 
-    border: 1px solid white;    
+}
+.valoracion-img-container{
+    width: 20%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.valoracion-receta img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: #2d2d2d;
+    border-radius: 4px;
 }
 
 /*Ingredientes*/
 .ingredientes-receta{
     width: 100%;
-    height: 80px;
+    height: auto;
     font-size: 12px;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 1px solid white;
     padding-left: 20px;
+    margin-top:8px;
+    margin-bottom: 10px;
+
 }
+.ingredientes-receta h3{
+    margin-bottom: 8px;
+}
+
 .ingredientes{
     width: 95%;
-    height: 40px;
-    display:flex;
+    min-height: 40px;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    border: 1px solid white;
-    gap:4px;
+    gap: 4px;
+}
+.img-container{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2d2d;
+    border-radius: 8px;
 }
 .ingredientes img{
     width: 25px;
@@ -115,4 +153,78 @@ body{
     margin-right: 10px;
     background-color: #2d2d2d;
     border-radius: 4px;
+    margin:auto;
+
 }
+
+/*Agregar receta*/
+.agregar-receta-container{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+.contador-cantidad{
+    width: 30%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contador-cantidad button{
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.add-receta-container{
+    width: 70%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.add-to-cart{
+    width: 80%;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2d2d;
+    color: white;  
+    border-radius: 12px;  
+    padding:10px;
+    font-size: 12px;
+}
+.add-to-cart img{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    margin-left:10px;
+}
+
+
+.add-to-cart button{
+    width: 100%;
+    height: 15px;
+    border: none;
+    background-color: #2d2d2d;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
