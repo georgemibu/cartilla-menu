@@ -5,7 +5,7 @@
     padding:0;
     box-sizing:border-box;
 }
-
+/*Fondo no necesario para pasar a react*/
 body{
     width: 100%;
     height: 100vh;
@@ -16,17 +16,18 @@ body{
     align-items:center;
 }
 
+/*Menu container*/
 .menu{
     width:80%;
     display:flex;
     flex-direction:column;
     align-items:center;
-    background-color: #2d2d2d;
+    background-color: #212121;
     border:1px solid #ffffff;
     border-radius: 25px;
     margin-bottom:120px;   
 }
-
+/*Navegación*/
 .nav-receta{
     width: 100%;
     height: 48px;
@@ -36,6 +37,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
+/*Foto central de la receta*/
 .foto-receta{
     width: 100%;
     height: 200px;
@@ -44,13 +46,15 @@ body{
     justify-content: center;
     align-items: center;
 }
+/*Descripción de la receta*/
 .descripcion-receta{
     width: 100%;
-    height: 50px;
+    height: 45px;
     display: flex;
     justify-content: space-evenly;
     padding:5px;
 }
+/*Titulo, precio y detalle de la receta*/
 .titulo-receta{
     font-size: 18px;
     margin-right: 68px;
@@ -72,6 +76,18 @@ body{
     height:70px;
 }
 
+
+.valoracion-receta{
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+
+    border: 1px solid white;    
+}
+
+/*Ingredientes*/
 .ingredientes-receta{
     width: 100%;
     height: 80px;
@@ -88,13 +104,15 @@ body{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
     border: 1px solid white;
-    margin-top:4px;
     gap:4px;
 }
 .ingredientes img{
     width: 25px;
     height: 25px;
     margin-right: 10px;
-
+    background-color: #2d2d2d;
+    border-radius: 4px;
 }
